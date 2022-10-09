@@ -632,6 +632,7 @@
  * Multiple extruders can be assigned to the same pin in which case
  * the fan will turn on when any selected extruder is above the threshold.
  */
+// TODO
 #define E0_AUTO_FAN_PIN -1
 #define E1_AUTO_FAN_PIN -1
 #define E2_AUTO_FAN_PIN -1
@@ -883,6 +884,7 @@
 
 // @section bltouch
 
+// TODO
 #if ENABLED(BLTOUCH)
   /**
    * Either: Use the defaults (recommended) or: For special purposes, use the following DEFINES
@@ -1120,6 +1122,7 @@
 // Adds extra movement to axes on direction-changes to account for backlash.
 //
 //#define BACKLASH_COMPENSATION
+// TODO maybe? Fix Y backlash
 #if ENABLED(BACKLASH_COMPENSATION)
   // Define values for backlash distance and correction.
   // If BACKLASH_GCODE is enabled these values are the defaults.
@@ -2016,6 +2019,7 @@
  * Warning: Does not respect endstops!
  */
 //#define BABYSTEPPING
+// TODO investigate this
 #if ENABLED(BABYSTEPPING)
   //#define INTEGRATED_BABYSTEPPING         // EXPERIMENTAL integration of babystepping into the Stepper ISR
   //#define BABYSTEP_WITHOUT_HOMING
